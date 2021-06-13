@@ -1,0 +1,32 @@
+@import "font.css";
+@import "sidebarServers.css";
+@import "sidebarChannels.css";
+
+:root {
+	--color-serversBar: #202225;
+	--color-channelsBar: #2f3136;
+	--color-channelsBar-highlight: #34373c;
+	--color-main: #36393f;
+	--color-profile: #282A2E;
+
+	--color-discord: #5865f2;
+	--color-destaque: #3ba55d;
+
+	--color-folder: #92a53b7a;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+	font-size: 16px;
+	display: flex;
+
+    overflow: hidden;
+}
+

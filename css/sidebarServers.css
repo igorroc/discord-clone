@@ -1,0 +1,110 @@
+#sidebarServers {
+	width: 4.5em;
+	height: 100vh;
+
+	padding: 0.75em 0;
+
+	background-color: var(--color-serversBar);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5em;
+
+    overflow: auto;
+}
+
+#home {
+	background-color: var(--color-discord);
+	width: 3em;
+	height: 3em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 2em;
+
+
+    position: relative;
+}
+
+#home svg {
+    color: white;
+}
+
+#servers {
+    width: 100%;
+
+    /* max-height: 500px; */
+    
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+    
+	align-items: center;
+
+    overflow: auto;
+}
+
+.serverIcon {
+    width: 3rem;
+	height: 3rem;
+    
+	border-radius: 2em;
+    
+	background-color: var(--color-channelsBar-highlight);
+    
+    position: relative;
+
+    transition: border-radius 300ms ease, background-color 300ms ease;
+}
+
+.serverIcon svg {
+    transition: color 300ms ease;
+}
+
+.serverIcon:hover{
+    border-radius: 1em;
+
+    background-color: var(--color-destaque);
+}
+
+.serverIcon:hover svg{
+    color: white;
+}
+
+#newServer,
+#searchServers {
+	color: var(--color-destaque);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* OPCOES */
+.divisionLineH {
+	background-color: #ffffff0f;
+	width: 100%;
+	max-width: 2em;
+	height: 2px;
+}
+
+.serverActive {
+	border-radius: 1em !important;
+}
+
+.serverActive::before {
+	content: "";
+
+    position: absolute;
+
+    left: -1em;
+
+    width: .5em;
+    height: 2.5em;
+
+    border-radius: 1em;
+
+    background-color: white;
+}
