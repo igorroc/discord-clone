@@ -164,8 +164,25 @@
 	background-color: var(--color-serversBar);
 
 	border-radius: 2em;
-
+	
 	position: relative;
+	
+}
+
+.conversa .fotoUsuario .foto{
+	width: 100%;
+	height: 100%;
+
+	border-radius: 2em;
+
+	overflow: hidden;
+}
+
+.conversa .fotoUsuario .foto img{
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
 }
 
 .conversa .content{
@@ -244,6 +261,23 @@
 
 	position: relative;
 }
+
+#profilePic .foto{
+	width: 100%;
+	height: 100%;
+	
+	border-radius: 2em;
+
+	overflow: hidden;
+}
+
+#profilePic .foto img{
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+}
+
 
 #profileName h4 {
 	font-size: 0.875em;
