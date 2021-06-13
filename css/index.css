@@ -1,4 +1,6 @@
 @import "font.css";
+@import "status.css";
+@import "scrollbar.css";
 @import "sidebarServers.css";
 @import "sidebarChannels.css";
 
@@ -25,8 +27,28 @@ body {
     height: 100vh;
 
 	font-size: 16px;
+
 	display: flex;
 
     overflow: hidden;
 }
 
+main{
+	flex-grow: 1;
+	height: 100%;
+	background-color: var(--color-main);
+}
+
+.contentMain{
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	color: var(--color-destaque);
+
+	font-size: 5em;
+	font-weight: bold;
+}
