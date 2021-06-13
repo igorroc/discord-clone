@@ -1,6 +1,5 @@
 #sidebarChannels {
 	width: 15em;
-	/* height: 100vh; */
 	background-color: var(--color-channelsBar);
 
     display: flex;

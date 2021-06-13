@@ -51,4 +51,10 @@ main{
 
 	font-size: 5em;
 	font-weight: bold;
+
+}
+
+.contentMain p{
+	max-width: 1000px;
+	text-align: center;
 }
