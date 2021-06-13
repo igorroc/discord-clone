@@ -1,17 +1,23 @@
-#sidebarServers {
-	width: 4.5em;
-	height: 100vh;
-
-	padding: 0.75em 0;
+#wrapperServers {
+	max-height: 100vh;
+	overflow: auto;
 
 	background-color: var(--color-serversBar);
+}
+
+#wrapperServers::-webkit-scrollbar {
+	display: none;
+}
+
+#sidebarServers {
+	width: 4.5em;
+
+	padding: 0.75em 0;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 0.5em;
-
-    overflow: auto;
 }
 
 #home {
@@ -24,53 +30,48 @@
 
 	border-radius: 2em;
 
-
-    position: relative;
+	position: relative;
 }
 
 #home svg {
-    color: white;
+	color: white;
 }
 
 #servers {
-    width: 100%;
+	width: 100%;
 
-    /* max-height: 500px; */
-    
 	display: flex;
 	flex-direction: column;
 	gap: 0.5em;
-    
-	align-items: center;
 
-    overflow: auto;
+	align-items: center;
 }
 
 .serverIcon {
-    width: 3rem;
+	width: 3rem;
 	height: 3rem;
-    
-	border-radius: 2em;
-    
-	background-color: var(--color-channelsBar-highlight);
-    
-    position: relative;
 
-    transition: border-radius 300ms ease, background-color 300ms ease;
+	border-radius: 2em;
+
+	background-color: var(--color-channelsBar-highlight);
+
+	position: relative;
+
+	transition: border-radius 300ms ease, background-color 300ms ease;
 }
 
 .serverIcon svg {
-    transition: color 300ms ease;
+	transition: color 300ms ease;
 }
 
-.serverIcon:hover{
-    border-radius: 1em;
+.serverIcon:hover {
+	border-radius: 1em;
 
-    background-color: var(--color-destaque);
+	background-color: var(--color-destaque);
 }
 
-.serverIcon:hover svg{
-    color: white;
+.serverIcon:hover svg {
+	color: white;
 }
 
 #newServer,
@@ -97,14 +98,14 @@
 .serverActive::before {
 	content: "";
 
-    position: absolute;
+	position: absolute;
 
-    left: -1em;
+	left: -1em;
 
-    width: .5em;
-    height: 2.5em;
+	width: 0.5em;
+	height: 2.5em;
 
-    border-radius: 1em;
+	border-radius: 1em;
 
-    background-color: white;
+	background-color: white;
 }

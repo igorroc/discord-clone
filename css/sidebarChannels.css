@@ -3,7 +3,7 @@
 	height: 100vh;
 	background-color: var(--color-channelsBar);
 
-    position: relative;
+	position: relative;
 }
 
 #buscaChannels {
@@ -37,11 +37,178 @@
 
 #conversas {
 	width: 100%;
-    height: 100%;
+	height: 100%;
+}
+
+.mainSection {
+	width: calc(224px - 1em);
+	height: 42px;
+
+	display: flex;
+	align-items: center;
+
+	border-radius: 0.25em;
+
+	margin: 0.5em auto;
+	padding: 0 0.5em;
+
+	cursor: pointer;
+}
+
+.mainSection:hover {
+	background-color: #34373c;
+}
+
+.mainSection:hover .icon svg, .mainSection:hover h3{
+    color: #dcddde;
+}
+
+.mainSection h3 {
+	font-size: 1em;
+	font-weight: 500;
+	color: #899297;
+}
+
+.mainSection .icon {
+	width: 2em;
+	height: 2em;
+
+	margin-right: 0.75em;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mainSection .icon svg {
+	width: 1.5em;
+	height: 1.5em;
+
+	color: #899297;
+}
+
+#dmDivisor{
+    width: 80%;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+#dmDivisor h3{
+    font-size: 12px;
+    font-weight: 600;
+    color: #899297;
+}
+
+#dmDivisor .icon{
+    width: 1em;
+	height: 1em;
+
+    margin-left: auto;
+    
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#dmDivisor .icon svg{
+    color: #899297;
+}
+
+#listaConversas{
+    width: 100%;
+}
+
+.conversa{
+    width: calc(90% - 1em);
+    height: 42px;
+
+    margin: .5em auto;
+    padding: 0 0.5em;
+
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.conversa:hover{
+    background-color: #34373C;
+}
+
+.conversa .fotoUsuario{
+	width: 2em;
+	height: 2em;
+
+	background-color: var(--color-serversBar);
+
+	border-radius: 2em;
+
+	position: relative;
+}
+
+.statusOn {
+	width: 10px;
+	height: 10px;
+
+	background-color: var(--color-destaque);
+	border-radius: 2em;
+
+	position: absolute;
+
+	right: 0;
+	bottom: 0;
+}
+
+.conversa .content{
+    color: #899297;
+    margin-left: .75em;
+    
+}
+
+.conversa .content .activity{
+    font-size: .75em;
+    display: flex;
+}
+
+.conversa .content .name h2{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.conversa .close{
+    width: 1.25em;
+    height: 1.25em;
+
+    margin-left: auto;
+    transform: translateX(30px);
+
+    transition: transform 300ms ease;
+}
+
+.conversa:hover .close{
+    transform: translateX(0);
+}
+
+.conversa .close svg{
+    width: 1em;
+    height: 1em;
+    color: #c5c6c7;
+}
+
+.conversa .close svg:hover{
+    color: white;
 }
 
 #configPessoal {
-    width: 14em;
+	width: 14em;
 	height: 3.25em;
 
 	margin-top: auto;
@@ -54,8 +221,8 @@
 
 	gap: 0.5em;
 
-    position: fixed;
-    bottom: 0;
+	position: fixed;
+	bottom: 0;
 }
 
 #profilePic {
@@ -69,19 +236,6 @@
 	position: relative;
 }
 
-#profilePic .status {
-	width: 10px;
-	height: 10px;
-
-	background-color: var(--color-destaque);
-	border-radius: 2em;
-
-	position: absolute;
-
-	right: 0;
-	bottom: 0;
-}
-
 #profileName h4 {
 	font-size: 0.875em;
 	color: white;
@@ -92,23 +246,23 @@
 	color: #b9bbbe;
 }
 
-#options{
-    margin-left: auto;
-    
-    display: flex;
-    gap: .4em;
+#options {
+	margin-left: auto;
+
+	display: flex;
+	gap: 0.4em;
 }
 
-#options button{
-    width: 2em;
-    height: 2em;
+#options button {
+	width: 2em;
+	height: 2em;
 
-    background: none;
-    border: none;
+	background: none;
+	border: none;
 }
 
-#options button svg{
-    width: 20px;
-    height: 20px;
-    color: #b9bbbe;
+#options button svg {
+	width: 20px;
+	height: 20px;
+	color: #b9bbbe;
 }
