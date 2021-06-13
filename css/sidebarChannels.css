@@ -63,7 +63,7 @@
 
 	border-radius: 0.25em;
 
-	margin: 0 auto;
+	margin: .2em auto;
 	padding: 0 0.5em;
 
 	cursor: pointer;
@@ -180,6 +180,13 @@
     display: flex;
 }
 
+.conversa .content .activity .activityText p{
+	max-width: 110px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
 .conversa .content .name h2{
     font-size: 1em;
     font-weight: 500;
@@ -277,4 +284,14 @@
 
 #options button:hover svg{
     color: #DCDDDE;
+}
+
+/* OPCOES */
+.sectionActive{
+	background-color: #393C43 !important;
+}
+
+.sectionActive h3,
+.sectionActive .icon svg{
+	color: white !important;
 }
