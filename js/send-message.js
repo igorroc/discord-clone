@@ -2,6 +2,8 @@ let ids = 1
 
 let userInput = document.getElementById("formUserInput")
 
+userInput.focus()
+
 userInput.addEventListener("keydown", enviaMensagem)
 
 function enviaMensagem(ev) {
