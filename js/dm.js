@@ -4,7 +4,7 @@ let userId = link.searchParams.get("userId") || 0
 let listaConversas = document.getElementById("listaConversas")
 
 listaConversas.children[userId].classList.add("sectionActive")
-listaConversas.children[userId].scrollIntoView()
+listaConversas.children[userId].scrollIntoView({behavior: "smooth", block: "center"})
 
 let listaChannels = document.getElementById("listaConversas")
 

@@ -5,7 +5,7 @@ let channelId = link.searchParams.get("channelId") || 0
 let listaServers = document.getElementById("servers")
 listaServers.children[serverId].classList.add("serverActive")
 
-listaServers.children[serverId].scrollIntoView()
+listaServers.children[serverId].scrollIntoView({behavior: "smooth", block: "center"})
 
 let listaChannels = document.getElementById("listaChats")
 listaChannels.children[channelId].classList.add("channelActive")

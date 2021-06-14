@@ -70,7 +70,7 @@ function enviaMensagem(ev) {
 		for (const chat of chats.children) {
 			if(chat.classList.contains("sectionActive")){
 				chat.setAttribute("style", "order: -1;")
-				document.getElementById("conversas").scrollTop = 0
+				chat.scrollIntoView({behavior: "smooth", block: "center"})
 			}
 		}
 	}
