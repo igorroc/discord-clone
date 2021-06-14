@@ -1,19 +1,11 @@
 let link = new URL(window.location)
-let serverId = link.searchParams.get("serverId")
-let channelId = link.searchParams.get("channelId")
-
-if (!serverId) {
-	serverId = 0
-}
+let serverId = link.searchParams.get("serverId") || 0
+let channelId = link.searchParams.get("channelId") || 0
 
 let listaServers = document.getElementById("servers")
 listaServers.children[serverId].classList.add("serverActive")
 
 listaServers.children[serverId].scrollIntoView()
-
-if (!channelId) {
-	channelId = 0
-}
 
 let listaChannels = document.getElementById("listaChats")
 listaChannels.children[channelId].classList.add("channelActive")

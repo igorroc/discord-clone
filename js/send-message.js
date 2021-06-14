@@ -7,7 +7,6 @@ userInput.addEventListener("keydown", enviaMensagem)
 function enviaMensagem(ev) {
 	if (ev.key == "Enter") {
 		let listaMensagens = document.getElementById("mensagens")
-        console.log(listaMensagens)
 
 		let user = document.querySelector("#profileName h4").innerHTML
 		let mensagem = userInput.value
@@ -66,5 +65,13 @@ function enviaMensagem(ev) {
 		listaMensagens.scrollTop = msgEnviada.offsetTop
 
 		userInput.value = ""
+
+		let chats = document.getElementById("listaConversas")
+		for (const chat of chats.children) {
+			if(chat.classList.contains("sectionActive")){
+				chat.setAttribute("style", "order: -1;")
+				document.getElementById("conversas").scrollTop = 0
+			}
+		}
 	}
 }
