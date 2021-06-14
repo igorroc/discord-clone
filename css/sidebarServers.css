@@ -101,6 +101,7 @@
 
 .serverActive {
 	border-radius: 1em !important;
+	position: relative;
 }
 
 .serverActive::before {
@@ -115,5 +116,5 @@
 
 	border-radius: 1em;
 
-	background-color: white;
+	background-color: white !important;
 }
