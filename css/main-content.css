@@ -1,0 +1,334 @@
+#infoHeader {
+	height: 48px;
+
+	padding: 0 1em;
+
+	box-shadow: 0 0 5px #0008;
+	color: white;
+
+	display: flex;
+	align-items: center;
+}
+
+#headerTitle {
+	display: flex;
+	align-items: center;
+}
+
+#headerTitle .icon svg {
+	color: #72767d;
+}
+
+#headerTitle .title {
+	margin-left: 0.5em;
+	font-weight: 600;
+}
+
+#headerOpcoes {
+	margin-left: auto;
+	display: flex;
+	gap: 1em;
+}
+
+#headerOpcoes input {
+	width: 144px;
+	height: 24px;
+
+	padding: 0 0.5em;
+
+	background-color: #202225;
+	color: white;
+
+	border-radius: 4px;
+
+	border: none;
+	outline: none;
+}
+
+#headerOpcoes .icon svg {
+	color: #72767d;
+}
+
+#headerOpcoes .icon:hover svg {
+	color: #b9bbbe;
+}
+
+.iconActive svg {
+	color: #dcddde !important;
+}
+
+#principal {
+	display: flex;
+}
+
+#principalMensagens {
+	width: 100%;
+	height: calc(100vh - 44px);
+
+	margin-right: 0.5em;
+
+	display: flex;
+	flex-direction: column;
+}
+
+#mensagens {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.mensagem {
+	width: 100%;
+
+	padding-left: 1em;
+	margin-bottom: 1em;
+
+	display: flex;
+	gap: 1em;
+}
+
+.mensagem:first-child {
+	margin-top: auto;
+}
+
+.mensagem:hover {
+	background-color: #32353b;
+}
+
+.mensagem .senderPic {
+	width: 40px;
+	height: 40px;
+
+	background-color: #b9bbbe;
+	border-radius: 100%;
+
+	overflow: hidden;
+}
+
+.mensagem .senderPic img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.mensagem .content {
+	display: flex;
+	flex-direction: column;
+}
+
+.mensagem .content .senderInfo {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+}
+
+.mensagem .content .senderInfo h5 {
+	font-size: 1em;
+	font-weight: 600;
+	color: #e91e63;
+
+	cursor: pointer;
+}
+
+.mensagem .content .senderInfo span {
+	font-size: 0.75em;
+	color: #72767d;
+	display: inline-block;
+
+	cursor: pointer;
+}
+
+.mensagem .content .textos {
+	max-width: 1100px;
+
+	margin-top: 0.5em;
+
+	color: white;
+
+	line-height: 1.5em;
+
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}
+
+#inputUsuario {
+	height: 44px;
+
+	margin: 1em;
+	margin-top: auto;
+	padding: 0.2em 1em;
+
+	background-color: #40444b;
+	border-radius: 10px;
+
+	display: flex;
+	align-items: center;
+
+	color: #b9bbbe;
+}
+
+#inputUsuario input {
+	width: 100%;
+	height: 100%;
+	margin-left: 1em;
+
+	background: none;
+	outline: none;
+	border: none;
+
+	color: white;
+
+	font-size: 1em;
+}
+
+#inputUsuario .icons {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	gap: 1em;
+}
+
+#inputUsuario .icon {
+	width: 20px;
+	height: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	cursor: pointer;
+}
+
+#inputUsuario .icons .icon:nth-child(1) svg {
+	width: 24px;
+	height: 24px;
+}
+
+#inputUsuario .icons .icon svg {
+	width: 20px;
+	height: 20px;
+}
+
+#listaMembros {
+	width: 240px;
+	height: calc(100vh - 48px);
+
+	margin-right: 0.5em;
+	padding: 1.5em 1em;
+
+	background-color: #2f3136;
+
+	overflow: auto;
+}
+
+.cargo {
+	width: 95%;
+	margin-bottom: 2em;
+}
+
+.cargo:last-child {
+	margin-bottom: 4em;
+}
+
+.cargo h4 {
+	font-size: 0.7em;
+	color: #8e9297;
+	text-transform: uppercase;
+}
+
+.membro {
+	height: 42px;
+
+	margin: 0.5em auto;
+	padding: 0 0.5em;
+
+	border-radius: 4px;
+
+	display: flex;
+	align-items: center;
+
+	text-decoration: none;
+
+	position: relative;
+	overflow: hidden;
+
+	cursor: pointer;
+}
+
+.membro:hover {
+	background-color: #34373c;
+}
+
+.membro .fotoUsuario {
+	width: 2em;
+	height: 2em;
+
+	background-color: var(--color-serversBar);
+
+	border-radius: 2em;
+
+	position: relative;
+}
+
+.membro .fotoUsuario .foto {
+	width: 100%;
+	height: 100%;
+
+	border-radius: 2em;
+
+	overflow: hidden;
+}
+
+.membro .fotoUsuario .foto img {
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+}
+
+.membro .content {
+	color: #899297;
+	margin-left: 0.75em;
+}
+
+.membro .content .activity {
+	font-size: 0.6em;
+	display: flex;
+}
+
+.membro .content .activity svg {
+	width: 12px;
+	height: 12px;
+}
+.membro .content .activity .activityText p {
+	max-width: 110px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.membro .content .name h2 {
+	font-size: 1em;
+	font-weight: 500;
+	max-width: 110px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+/* OPCOES */
+
+.grayscale {
+	filter: grayscale(1);
+}
+
+.icon {
+	cursor: pointer;
+}
+
+.displaynone {
+	display: none;
+}

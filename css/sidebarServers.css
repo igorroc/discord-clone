@@ -1,8 +1,8 @@
 #wrapperServers {
-	width: 4.5em;
+	min-width: 4.5em;
 	max-height: 100vh;
 	overflow: auto;
-
+	
 	background-color: var(--color-serversBar);
 }
 
@@ -11,6 +11,7 @@
 }
 
 #sidebarServers {
+	width: 4.5em;
 	padding: 0.75em 0;
 
 	display: flex;
@@ -101,6 +102,7 @@
 .serverActive {
 	border-radius: 1em !important;
 	position: relative;
+	background-color: var(--color-destaque);
 }
 
 .serverActive::before {

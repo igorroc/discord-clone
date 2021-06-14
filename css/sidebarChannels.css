@@ -288,6 +288,8 @@
 
 	position: relative;
 	overflow: hidden;
+
+	cursor: pointer;
 }
 
 .channel .icon {
@@ -428,6 +430,7 @@
 }
 
 .sectionActive h3,
+.sectionActive .content,
 .sectionActive .icon svg {
 	color: white !important;
 }
