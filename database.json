@@ -1,0 +1,23 @@
+{
+	"servers": {
+		"ProcrastinaNão": {
+            "id": 0,
+            "img": "https://cdn.discordapp.com/icons/696430420992066112/a_fa82e9a92d07bba8b6f175de0a2cbd00.png",
+            "channels": {
+                "💬・global-1": {
+                    "id": 0
+                }
+            },
+            "members": {
+                "🎇 Administração":{
+                    "Eevee": {
+                        "status": "on",
+                        "activity": "Ouvindo",
+                        "activity_name": "Spotify"
+                    }
+                }
+            }
+        }
+	},
+	"direct": {}
+}
