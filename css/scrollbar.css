@@ -3,12 +3,12 @@
 	width: 8px;
 }
 
-::-webkit-scrollbar-track{
-    background-color:#2E3338;
+::-webkit-scrollbar-track {
+	background-color: #2e3338;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #202225;
-    border-radius: 2em;
+	background: #202225;
+	border-radius: 2em;
 }

@@ -1,14 +1,13 @@
 .mobileOnly {
 	display: none;
 
-
 	position: absolute;
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
 	justify-content: center;
 
-    background-color: #2F3136;
+	background-color: #2f3136;
 
 	color: white;
 }
@@ -20,7 +19,7 @@
 
 .mobileOnly p {
 	font-size: 1.5rem;
-    text-align: center;
+	text-align: center;
 	width: 90%;
 	margin: 70px 0;
 }

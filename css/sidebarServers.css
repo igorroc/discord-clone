@@ -2,7 +2,7 @@
 	width: 4.5em;
 	max-height: 100vh;
 	overflow: auto;
-	
+
 	background-color: var(--color-serversBar);
 }
 

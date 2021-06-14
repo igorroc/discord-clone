@@ -1,4 +1,3 @@
-
 function continueMobile() {
 	let mobile = document.getElementById("mobile")
 	let everything = document.getElementById("everything")
